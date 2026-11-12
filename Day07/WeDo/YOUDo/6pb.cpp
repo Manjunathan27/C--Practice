@@ -8,8 +8,6 @@ int main()
     cin>>upperlimit;
     for(int i=1;i<=upperlimit;i++)
     {
-        while(i<upperlimit)
-        {
             lastdigit=i%10;
             firstdigit=i/10;
             if(lastdigit==firstdigit)
@@ -17,7 +15,6 @@ int main()
                 count++;
                 cout<<i<<endl;
             }
-        }
     }
     cout<<"Matches = "<<count;
 }
